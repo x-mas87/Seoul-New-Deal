@@ -1,3 +1,5 @@
+package A0612;
+
 import com.sun.source.tree.WhileLoopTree;
 
 import java.util.Random;
@@ -6,6 +8,108 @@ import java.util.Scanner;
 public class A0612 {
 
     public static void main(String[] args) {
+
+        String str = "오늘은 월요일, 공부하고 티비를 본다";
+        String a = str.substring(4,7);
+        System.out.println(a);
+
+        String b = str.replace("공부","study");
+        System.out.println(b);
+
+        String c = str.concat(" 내일은 화요일");
+        System.out.println(c);
+
+
+//
+//        String []a = str.split(",");
+//        System.out.println(a[0]);
+//        System.out.println(a[1]);
+//
+//        for (String b :
+//                a) {
+//            System.out.println(b);
+//        }
+
+//        String s[][] = {{"java"},{"c","c++"},{"html","css","js"}};
+//
+//        for (int i = 0; i < s.length; i++) {
+//            for (int j = 0; j < s[i].length; j++) {
+//                System.out.print(s[i][j]);
+//            }
+//            System.out.println();
+//        }
+
+//        //하나의 문자 5행 5열 구조
+//        char d[][] = new char[5][5];
+//
+//        //실수형 5행 2열 구조
+//        double b[][] = new double[5][2];
+//
+//        int [][] c = {{1,2,3},{4,5,6}};//2행 3열
+//
+//        //2차원배열일떄
+//        //행 : -> 배열명.length
+//        //열 : -> 배열명[행].length
+//        for (int i = 0; i < c.length; i++) {
+//            for (int j = 0; j < c[i].length; j++) {
+//                System.out.println(c[i][j]);
+//            }
+//
+//        }
+
+
+        //for-each문 활용
+//        int sum = 0;
+//        int ary[] = {1, 2, 3, 4, 5};
+//        for (int i :
+//                ary) {
+//            sum += i;
+//        }
+//        System.out.println(sum);
+
+
+//        Scanner s = new Scanner(System.in);
+//
+//        //정수5개 들어갈수 있는 배열 생성
+//        int ary[] = new int[5];
+//        int max = 0;
+//
+//        //정수5개를 입력해서 제일 큰 값을 출력(배열)
+//        for (int i = 0; i < ary.length; i++) {
+//            ary[i] = s.nextInt(); // ary[0],ary[1],ary[2] ~ art[4]
+//            if (max < ary[i]){
+//                max = ary[i];
+//            }
+//
+//        }
+//        System.out.println("가장 큰수는" + max);
+
+
+//        Scanner s = new Scanner(System.in);
+//        double ary[] = new double[3];
+//        //배열 선언        배열 생성
+//
+//        for (int i = 0; i < 3; i++) {
+//            ary[i] =s.nextDouble();//실수3회입력
+//            System.out.println(ary[i]);
+//        }
+
+
+//        //1. 정수 5개를 저장할 배열
+//        int a[] = new int[5];
+//
+//        //2 10개 저장하는 배열
+//        int d[] = new int[10];
+//
+//        //3. 실수 10ㄱ ㅐ 저장할 배열
+//        double [] b = new double[10];
+//
+//        //4.배열 요소 수가 세개인 int형 배열
+//        int c[] = new int[3];
+//
+//        //인덱스의 최대값이 4인 char 형 배열
+//        char e[] =new char[5];
+
 
         // 1.	5/3 한 결과값을 소수점 둘째 자리 까지 출력해라. (printf 사용)
 
@@ -133,7 +237,7 @@ public class A0612 {
 //        }
 
 
-    //do-while
+        //do-while
 
 //        String str;
 //        Scanner s = new Scanner(System.in);
@@ -168,7 +272,7 @@ public class A0612 {
 //        System.out.println(sum);
 
 
-    //많이 쓰이는 표현식
+        //많이 쓰이는 표현식
 //        while (true){
 //            int n = (int)(Math.random()*6)+1;
 //
@@ -204,7 +308,7 @@ public class A0612 {
 //            System.out.println(sum);
 //        }
 
-    //중첩 for문
+        //중첩 for문
 //        for (int i = 2; i < 9; i++) {//행
 //            for (int j = 1; j <=9; j++) {//열
 //                System.out.print(i + "*" + j + "="+ i*j + " ");
@@ -213,7 +317,7 @@ public class A0612 {
 //            System.out.println();
 //        }
 
-    //WHILE문 : 초기문, 조건문, 증감문
+        //WHILE문 : 초기문, 조건문, 증감문
 //        int i =1 ;
 //        while (i<=99){
 //            if (i%2 ==0 || i%3 ==0) {
@@ -248,7 +352,7 @@ public class A0612 {
 //        }
 
 
-    //for문 : 초기식, 조건식, 증감
+        //for문 : 초기식, 조건식, 증감
 
 //        for (int i = 1; i <=15; i++) {
 //            System.out.print("*");
@@ -258,7 +362,7 @@ public class A0612 {
 //
 //        }
 
-    //총합구하기
+        //총합구하기
 //        int sum = 0;
 //        for (int i = 1; i < 100; i++) {
 //            if (i % 2 == 0) {//짝수이면
@@ -267,7 +371,7 @@ public class A0612 {
 //        }
 //        System.out.println(sum);
 
-    //1부터100사이에서 30배수 출력
+        //1부터100사이에서 30배수 출력
 //        for (int i = 1; i<100; i++){//전제조건
 //            if(i%5 ==0 && i%6 ==0){//30배수 출력
 //                System.out.println(i);
@@ -285,16 +389,16 @@ public class A0612 {
 //            System.out.println("n은 10의 배수이다");
 //        } else
 //            System.out.println("위조건 둘다아님");
-    //0.0 *100 + 1 <= random() *100 +1 <1.0*100 +1
-    //1 <=  < 101
+        //0.0 *100 + 1 <= random() *100 +1 <1.0*100 +1
+        //1 <=  < 101
 
 
-    //switch case값(상수:문자 문자열 정수) 상수만 올수있음
+        //switch case값(상수:문자 문자열 정수) 상수만 올수있음
 //        Scanner s = new Scanner(System.in);
 //        System.out.println("무슨 요일이야?");
 
-    //String day = s.next();
-    //char day = s.next().charAt(0); //한글자 입력받기
+        //String day = s.next();
+        //char day = s.next().charAt(0); //한글자 입력받기
 
 
 //        String day = s.next();
@@ -313,7 +417,7 @@ public class A0612 {
 //                break;
 //        }
 
-    //중첩 if문
+        //중첩 if문
 //        Scanner s = new Scanner(System.in);
 //        System.out.println("점수입력 : ");
 //        int score = s.nextInt();
@@ -336,7 +440,7 @@ public class A0612 {
 //            System.out.println("불합격");
 //        }
 
-    //삼항조건 연산자
+        //삼항조건 연산자
 //        int score = 85;
 //        char grade = (score>90)?'A' : 'B';
 //
@@ -370,7 +474,7 @@ public class A0612 {
 //        }
 
 
-    //4.	Scanner클래스를 이용하여 이름, 사는 곳, 나이, 체중을 입력받고, 출력하는 프로그램 작성해라.
+        //4.	Scanner클래스를 이용하여 이름, 사는 곳, 나이, 체중을 입력받고, 출력하는 프로그램 작성해라.
 //        System.out.println("입력해라 : kim seoul 29 65.5");
 //        Scanner s = new Scanner(System.in);// 스캐너 클래스의 객체 생성
 //        String name = s.next();
@@ -381,20 +485,20 @@ public class A0612 {
 //                "살이다." + "몸무게는" + weigh +"이다.");
 
 
-    // 3.	a를 4.0, b를 1.2로 초기화하여 4.0+1.2를 printf로 출력해라.
-    //실행 결과) 4.0+1.2=5.2
+        // 3.	a를 4.0, b를 1.2로 초기화하여 4.0+1.2를 printf로 출력해라.
+        //실행 결과) 4.0+1.2=5.2
 //        double a = 4.0, b = 1.2;
 //
 //        System.out.printf("%.1f", (a + b));
 
 
-    //2.    하나의 정수를 입력받아 그 수의 제곱을 구해라.
+        //2.    하나의 정수를 입력받아 그 수의 제곱을 구해라.
 //        System.out.println("하나의 정수를 입력하세요");
 //        Scanner s = new Scanner(System.in);
 //        int a = s.nextInt();
 //        System.out.println(a*a);
 
-    //1.	10/4 한 결과값을 소수점까지 출력해라
+        //1.	10/4 한 결과값을 소수점까지 출력해라
 //        int a = 10, b = 4;
 //        int result = 0;
 //        System.out.println(Double)(a/b);
@@ -420,9 +524,9 @@ public class A0612 {
 //        char grade = 'A';
 //
 //        System.out.println(age + " " + ki + " " + name + " " + grade);
-    //변수 : 변할수도 있는 값
-    //변수 선언
-    //자료형 변수명
-    // = : 대입연산자
-}
+        //변수 : 변할수도 있는 값
+        //변수 선언
+        //자료형 변수명
+        // = : 대입연산자
+    }
 }
