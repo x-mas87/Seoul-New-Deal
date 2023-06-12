@@ -9,15 +9,156 @@ public class A0612 {
 
     public static void main(String[] args) {
 
-        String str = "오늘은 월요일, 공부하고 티비를 본다";
-        String a = str.substring(4,7);
-        System.out.println(a);
+        //숫자를 입력하여 정답 숫자 맞추는 게임
+        //
+        //정답을18로 설정
+        //
+        //입력한숫자가 정답(18)이 아닐 경우 크거나 작은지 알려준다.
+        // 정답을맞출 때까지 숫자 입력을 반복하고 정답을 맞춘 후에는 시도한 횟수 출력
+        //
+        //실행결과) 숫자 입력: 25
+        //
+        //25보다 작다!!
+        //
+        //숫자 입력: 10
+        //
+        //10보다 크다!!
+        //
+        //숫자 입력: 18
+        //
+        //정답이다!!
+        //
+        //시도한 횟수는 3번이다.
 
-        String b = str.replace("공부","study");
-        System.out.println(b);
+//        Scanner s = new Scanner(System.in);
+//        int answer = 18;
+//        int cnt = 0;
+//        int result;
+//
+//        while( true ) {
+//            System.out.print("숫자 입력 : ");
+//            result = s.nextInt();
+//            cnt ++;
+//
+//            if( result == answer) {
+//                System.out.println("정답.");
+//                System.out.println("시도한 횟수는" + cnt + "번 입니다.");
+//                break;
+//            }else if( result > answer) System.out.println(result + "보다 작다!!");
+//            else if( result < answer) System.out.println(result + "보다 크다!!");
+//        }
 
-        String c = str.concat(" 내일은 화요일");
-        System.out.println(c);
+// 7] JDK에는JRE가 포함되는가? JVM은 무엇인가?
+//        System.out.println("포함");
+//        System.out.println("자바 프로그램 실행환경을 만들어 주는 소프트웨어");
+
+        //while, random()을 이용해서 (x,y)형태로 출력하는데 x+y합이 5이면
+        // 실행을 멈추는 코드를 작성. 5가 아니면 난수 계속 발생시키고출력 (x,y 범위는 1부터 5까지)
+      //import java.util.Random;
+//        Random random = new Random();
+//
+//        int x = random.nextInt(5) + 1;
+//        int y = random.nextInt(5) + 1;
+//
+//        while (x + y != 5) {
+//            System.out.println(x + " " + y);
+//
+//           x = random.nextInt(5) + 1;
+//           y = random.nextInt(5) + 1;
+//        }
+//
+//        System.out.println(x + " " + y);
+//        System.out.println("실행 중지.");
+//        while(true) {
+//            int x = (int)(Math.random()*5+1);
+//            int y = (int)(Math.random()*5+1);
+//            if(x + y == 5) {
+//                System.out.println("실행 중지");
+//                break;
+//            }
+//            System.out.println(x + "," + y);
+//        }
+
+        //중첩 반복문으로 5단부터 9단까지 출력
+//        for (int i = 5; i <= 9; i++) {
+//            System.out.println( i + "단:");
+//
+//            for (int j = 1; j < 10; j++) {
+//                int result = i * j;
+//                System.out.print(i + " x " + j + " = " + result + ", ");
+//            }
+//
+//            System.out.println();
+//        }
+//
+//        //while문을 이용해서 1부터 100까지 정수 중 5의배수의 총합을 출력
+//        int number = 1;
+//        int sum = 0;
+//
+//        while (number <= 100) {
+//            if (number % 5 == 0) {
+//                sum += number;
+//            }
+//            number++;
+//        }
+
+        //System.out.println("1부터 100까지 정수 중 5의배수의 총합: " + sum);
+
+        //2. 시간과 물건 개수로 금액 할인해주는 프로그램
+
+        //(총 금액은 10만원으로 설정, 시간과물건 개수는 입력받기)
+
+        //14시에 마트를 방문하고 물건 개수가 3개 이하이면 5%로 할인
+
+        //18시에 마트를 방문하고 물건 개수가 5개 이하이면 10%로 할인
+
+        //20시에 마트를 방문하고 물건 개수가 10개 이하이면 20%로 할인
+//        Scanner s = new Scanner(System.in);
+//
+//        int totalPrice = 100000; // 총금액 10만원
+//
+//        System.out.print("방문시간: ");
+//        int hour = s.nextInt();
+//
+//        System.out.print("물건 개수: ");
+//        int itemCount = s.nextInt();
+//
+//        double discount = 0.0;
+//
+//        if (hour == 14 && itemCount <= 3) {
+//            discount = 0.05; // 5%
+//        } else if (hour == 18 && itemCount <= 5) {
+//            discount = 0.1; // 10%
+//        } else if (hour == 20 && itemCount <= 10) {
+//            discount = 0.2; // 20%
+//        }
+//
+//        double discountedPrice = totalPrice - (totalPrice * discount);
+//
+//        System.out.println("할인금액: " + discountedPrice + "원");
+
+       
+
+
+
+        // 1. 두 과목 점수를 입력하여 평균 출력하는 프로그램(평균은소수점 이하 첫째자리까지 출력)
+        //출력 결과) 두 과목의점수 : 70 80
+        //평균 : 75.0
+
+//        double a = 70.00 , b = 80.00;
+//        double max = (a+b)/2;
+//        System.out.printf("%.1f",max);
+
+
+//        String str = "오늘은 월요일, 공부하고 티비를 본다";
+//        String a = str.substring(4,7);
+//        System.out.println(a);
+//
+//        String b = str.replace("공부","study");
+//        System.out.println(b);
+//
+//        String c = str.concat(" 내일은 화요일");
+//        System.out.println(c);
 
 
 //
