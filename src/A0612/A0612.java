@@ -9,6 +9,7 @@ public class A0612 {
 
     public static void main(String[] args) {
 
+
         //숫자를 입력하여 정답 숫자 맞추는 게임
         //
         //정답을18로 설정
